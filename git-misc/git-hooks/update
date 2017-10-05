@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Ensure hooks are properly set - must leave this here for proper functioning
+/usr/bin/env bash "$GIT_DIR/../git-misc/updateHooks.sh"
+
+
+# Specify your own hooks here to sync
+# You can use $GIT_DIR for absolute paths. It points to $repoRoot/.git.
+# As such, running a script in the root of the repo would look like:
+# bash $GIT_DIR/../script.sh
